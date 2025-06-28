@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fef4e3;
 }
 
 code {
@@ -12,3 +13,6 @@ code {
     monospace;
 }
 
+.label-form{
+  color: white;
+}

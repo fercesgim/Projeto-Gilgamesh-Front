@@ -3,9 +3,9 @@ import { Form, Button, Card } from 'react-bootstrap';
 import Spinner from './Spinner'; // Importando nosso componente Spinner
 
 const MarkdownEditor = ({ content, onContentChange, onCommit, isLoading }) => (
-  <Card bg="light" className="mt-4">
+  <Card bg="dark" className="mt-4">
     <Card.Body>
-      <Card.Title>Conteúdo Gerado</Card.Title>
+      <Card.Title className='label-form'>Conteúdo Gerado</Card.Title>
       <Form.Group>
         <Form.Control
           as="textarea"

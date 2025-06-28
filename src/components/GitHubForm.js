@@ -21,25 +21,25 @@ const GitHubForm = ({ onGenerate, isLoading }) => {
   };
 
   return (
-    <Card bg="light">
+    <Card bg="dark">
       <Card.Body>
         <Form onSubmit={handleSubmit}>
           <Row className="g-3">
             <Col md={6}>
               <Form.Group>
-                <Form.Label>Usuário do GitHub</Form.Label>
+                <Form.Label className='label-form'>Usuário do GitHub</Form.Label>
                 <Form.Control type="text" name="username" value={formData.username} onChange={handleInputChange} required />
               </Form.Group>
             </Col>
             <Col md={6}>
               <Form.Group>
-                <Form.Label>Nome do Repositório</Form.Label>
+                <Form.Label className='label-form'>Nome do Repositório</Form.Label>
                 <Form.Control type="text" name="repositoryName" value={formData.repositoryName} onChange={handleInputChange} required />
               </Form.Group>
             </Col>
             <Col xs={12}>
               <Form.Group>
-                <Form.Label>Token do GitHub</Form.Label>
+                <Form.Label className='label-form'>Token do GitHub</Form.Label>
                 <Form.Control type="password" name="githubToken" value={formData.githubToken} onChange={handleInputChange} required />
               </Form.Group>
             </Col>
